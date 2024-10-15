@@ -7,12 +7,9 @@
 
 import Foundation
 
-struct Peripherals {
+struct Peripheral: Identifiable {
+    
+    let id: UUID
     let name: String
-    let uuid: UUID
-    let isConnected: Bool
-    let isDiscoverable: Bool
-    let isConnectable: Bool
-    let isPaired: Bool
     let rssi: Int //used for signal strength
 }
